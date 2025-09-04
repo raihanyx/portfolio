@@ -69,23 +69,52 @@
   <header class="container hero">
     <div class="artcard">
       <div class="art-body">
-        <div class="meta"><span>2024</span><span class="badge">Hackathon</span></div>
+        <div class="meta"><span>2024</span><span class="badge">Web App</span></div>
         <h1 class="title">NontonNyaman</h1>
         <p class="subtitle">A mobile app that helps mobility-impaired fans navigate stadiums during live events — quickly, safely, and with dignity.</p>
       </div>
     </div>
   </header>
 
+    <!-- MEDIA: App intro image -->
+  <section class="container section">
+    <div class="prose">
+      <h3>App start & identity</h3>
+      <p>Here’s the start screen and logo we shipped for the first public demo.</p>
+      <figure style="margin:0">
+        <img src="./assets/images/Introduction.png" alt="NontonNyaman start page and logo" style="max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow)" />
+        <figcaption style="color:var(--muted);font-size:14px;margin-top:8px">NontonNyaman — start page and logo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
   <!-- STORY -->
   <section class="container section">
     <div class="prose">
-      <p><strong>Why I built this.</strong> I love the energy of live sports — but in our early research it was obvious that the experience isn’t equal for everyone. Accessibility details are scattered, staff are stretched, and moving from A to B inside a stadium can be stressful if you use a wheelchair or walker. <em>NontonNyaman</em> (“comfortable watching” in Bahasa Indonesia) is my team’s attempt to fix that — a companion app that puts navigation, assistance, and information in one place for mobility-impaired fans.</p>
+      <p><strong>Why I built this.</strong> I love the energy of live sports, but in our early research it was obvious that the experience isn’t equal for everyone. Accessibility details are scattered, staff are stretched, and moving from A to B inside a stadium can be stressful if you use a wheelchair or walker. <em>NontonNyaman</em> (“comfortable watching” in Bahasa Indonesia) is my team’s attempt to fix that, a companion app that puts navigation, assistance, and information in one place for mobility-impaired fans.</p>
 
-      <p><strong>What the app does.</strong> Pick your stadium, choose a destination like an accessible bathroom, ramp, or nearest exit, and the app guides you with clear directions. If something goes wrong, there’s an emergency button to reach stadium support immediately, and a general “request assistance” flow that notifies trained staff to come to you. Profiles store only the essentials — name and mobility needs — so staff can help appropriately.</p>
+      <p><strong>What the app does.</strong> Pick your stadium, choose a destination like an accessible bathroom, ramp, or nearest exit, and the app guides you with clear directions. If something goes wrong, there’s an emergency button to reach stadium support immediately, and a general “request assistance” flow that notifies trained staff to come to you. Profiles store only the essentials, name and mobility needs, so staff can help appropriately.</p>
 
       <p><strong>How we got there.</strong> We mixed desk research with fieldwork: five interviews with mobility-impaired spectators, on-site surveys at Suncorp and The Gabba to map key facilities, and a review of the market (Ticketmaster, Ticketek, Eventbrite). The gap was consistent across sources: accessibility info is shallow, navigation is ad-hoc, and assistance is reactive. We designed to fill that gap.</p>
     </div>
   </section>
+
+    <!-- VIDEO: Exhibition demo -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Exhibition demo</h3>
+      <p>A short clip from the on‑campus exhibition where we walked people through navigation, assistance, and profiles.</p>
+        <video controls preload="metadata" muted
+                style="max-width:250px;width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow)"
+                poster="./assets/images/Introduction.png">
+                <source src="./assets/video/exhibition.mp4" type="video/mp4">
+                Your browser can’t play this video. 
+                <a href="./assets/video/exhibition.mp4">Download the MP4</a>.
+        </video>
+    </div>
+  </section>
+
 
   <!-- RESEARCH & FEATURES -->
   <section class="container section">
@@ -130,7 +159,7 @@
         <ul>
           <li><strong>Ethics:</strong> design for inclusion; support assistive tech; avoid dark patterns.</li>
           <li><strong>Security:</strong> lean on Django hardening and encrypted storage for sensitive bits.</li>
-          <li><strong>Privacy:</strong> follow Australia’s APPs — consent, data minimisation, and encryption of sensitive info.</li>
+          <li><strong>Privacy:</strong> follow Australia’s APPs, consent, data minimisation, and encryption of sensitive info.</li>
           <li><strong>Risk planning:</strong> identified technical and team risks and tracked mitigations.</li>
         </ul>
       </div>
@@ -145,6 +174,19 @@
       <p class="mt-3"><a class="btn" href="index.html#/projects">← Back to Projects</a></p>
     </div>
   </section>
+
+    <!-- DOCS: PDF -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Technical documentation</h3>
+      <p>If you want the full deep dive — research, features, tech stack, and evaluations — read or download the PDF.</p>
+      <p>
+        <a class="btn" href="./assets/documents/NontonNyaman.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+        <span style="margin-left:12px;color:var(--muted)">(opens in a new tab)</span>
+      </p>
+    </div>
+  </section>
+
 
   <footer>
     <div class="container">© <span id="year"></span> Raihan • <a href="index.html#/">Home</a></div>
