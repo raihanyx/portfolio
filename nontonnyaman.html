@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NontonNyaman — Project | Raihan</title>
+  <meta name="description" content="NontonNyaman — accessibility-focused mobile app for mobility-impaired fans at live sporting events. Story, research, features, and stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0e1116; --elev-1:#121722; --elev-2:#171c28; --text:#e9edf1; --muted:#9fb1c1;
+      --accent:#2dd4bf; --accent-2:#5eead4; --border:rgba(255,255,255,.08);
+      --shadow:0 10px 28px rgba(2,6,23,.35); --radius:16px; --maxw:1100px;
+    }
+    [data-theme="light"]{
+      --bg:#f8fafc; --elev-1:#ffffff; --elev-2:#f1f5f9; --text:#0f172a; --muted:#475569;
+      --accent:#14b8a6; --accent-2:#0ea5a4; --border:rgba(2,6,23,.10); --shadow:0 12px 26px rgba(2,6,23,.06);
+    }
+    html,body{height:100%}
+    body{margin:0;font-family:"Plus Jakarta Sans",ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent-2)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(12,14,18,.6);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border)}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:28px;height:28px;border-radius:999px;background:radial-gradient(closest-side, rgba(45,212,191,.45), rgba(45,212,191,0) 70%), var(--elev-1);display:grid;place-items:center;border:1px solid var(--border);box-shadow:var(--shadow);font-weight:800;color:var(--accent)}
+    .links{display:flex;gap:10px;align-items:center}
+    .links a{padding:8px 12px;border-radius:10px;color:var(--text)}
+    .links a[aria-current="page"], .links a:hover{background:var(--elev-2)}
+    .pill{padding:4px 10px;border:1px solid var(--border);border-radius:999px;background:var(--elev-2);color:var(--muted);font-size:12px}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;background:var(--accent);color:#fff;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+    .btn:hover{background:var(--accent-2)}
+    .hero{padding:56px 0 24px}
+    .title{font-size:44px;margin:8px 0 6px}
+    .subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+    .prose{color:var(--muted);font-size:18px;line-height:1.8}
+    .prose p{margin:0 0 16px}
+    .section{padding:28px 0;border-top:1px solid var(--border)}
+    .meta{display:flex;gap:10px;color:var(--muted);font-size:13px;margin:8px 0}
+    .badge{border:1px solid var(--border);background:var(--elev-2);padding:2px 8px;border-radius:999px;font-size:12px}
+    .artcard{position:relative;background:linear-gradient(120deg,rgba(45,212,191,.10),rgba(59,130,246,.08)),var(--elev-1);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin-top:12px}
+    .artcard .art-body{position:relative;padding:22px 24px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    footer{padding:48px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#/" aria-label="Back to home">
+        <div class="logo"><span>R</span></div>
+      </a>
+      <div class="links" role="navigation" aria-label="Primary">
+        <a href="index.html#/">Home</a>
+        <a href="index.html#/projects">Projects</a>
+        <a href="index.html#/about">About</a>
+        <button id="themeBtn" class="pill" title="Toggle theme">Toggle</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="container hero">
+    <div class="artcard">
+      <div class="art-body">
+        <div class="meta"><span>2024</span><span class="badge">Hackathon</span></div>
+        <h1 class="title">NontonNyaman</h1>
+        <p class="subtitle">A mobile app that helps mobility-impaired fans navigate stadiums during live events — quickly, safely, and with dignity.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="container section">
+    <div class="prose">
+      <p><strong>Why I built this.</strong> I love the energy of live sports — but in our early research it was obvious that the experience isn’t equal for everyone. Accessibility details are scattered, staff are stretched, and moving from A to B inside a stadium can be stressful if you use a wheelchair or walker. <em>NontonNyaman</em> (“comfortable watching” in Bahasa Indonesia) is my team’s attempt to fix that — a companion app that puts navigation, assistance, and information in one place for mobility-impaired fans.</p>
+
+      <p><strong>What the app does.</strong> Pick your stadium, choose a destination like an accessible bathroom, ramp, or nearest exit, and the app guides you with clear directions. If something goes wrong, there’s an emergency button to reach stadium support immediately, and a general “request assistance” flow that notifies trained staff to come to you. Profiles store only the essentials — name and mobility needs — so staff can help appropriately.</p>
+
+      <p><strong>How we got there.</strong> We mixed desk research with fieldwork: five interviews with mobility-impaired spectators, on-site surveys at Suncorp and The Gabba to map key facilities, and a review of the market (Ticketmaster, Ticketek, Eventbrite). The gap was consistent across sources: accessibility info is shallow, navigation is ad-hoc, and assistance is reactive. We designed to fill that gap.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH & FEATURES -->
+  <section class="container section">
+    <div class="grid">
+      <div class="prose">
+        <h3>Research & methodology</h3>
+        <p>We used a mixed-methods approach:</p>
+        <ul>
+          <li><strong>Literature review:</strong> what “good” accessibility looks like in stadia and law (e.g., ADA adherence, trained staff, wayfinding).</li>
+          <li><strong>Market comparison:</strong> popular event apps lack depth on accessibility and proactive assistance.</li>
+          <li><strong>Interviews (5):</strong> validated needs like emergency assistance, direct staff contact, and private escalation (alert staff, not strangers).</li>
+          <li><strong>On-site survey:</strong> mapped facility coordinates (exits, ramps, bathrooms) to power navigation.</li>
+        </ul>
+      </div>
+      <div class="prose">
+        <h3>Key features</h3>
+        <ul>
+          <li><strong>Stadium navigation:</strong> searchable stadiums and one-tap routing to accessible facilities.</li>
+          <li><strong>Emergency assist:</strong> dedicated button to contact stadium emergency support fast.</li>
+          <li><strong>Request assistance:</strong> notify designated staff who come to your location.</li>
+          <li><strong>User profile:</strong> minimal data (name, mobility details) so staff can help effectively.</li>
+          <li><strong>News & stays:</strong> optional feed and nearby accommodation suggestions for traveling fans.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH & DELIVERY -->
+  <section class="container section">
+    <div class="grid">
+      <div class="prose">
+        <h3>Tech choices</h3>
+        <ul>
+          <li><strong>Frontend:</strong> Flutter (Dart) for a fast, accessible mobile UI.</li>
+          <li><strong>Backend:</strong> Python + Django with ORM, auth, and admin out of the box.</li>
+          <li><strong>Data:</strong> Stadium facility coordinates (lat/long) stored for routing.</li>
+          <li><strong>Infra:</strong> GitHub for version control; Heroku for easy deploys to staging.</li>
+        </ul>
+      </div>
+      <div class="prose">
+        <h3>Safety & respect</h3>
+        <ul>
+          <li><strong>Ethics:</strong> design for inclusion; support assistive tech; avoid dark patterns.</li>
+          <li><strong>Security:</strong> lean on Django hardening and encrypted storage for sensitive bits.</li>
+          <li><strong>Privacy:</strong> follow Australia’s APPs — consent, data minimisation, and encryption of sensitive info.</li>
+          <li><strong>Risk planning:</strong> identified technical and team risks and tracked mitigations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Where it landed</h3>
+      <p>Usability tests were encouraging: clearer wayfinding reduced anxiety, and direct staff contact felt safer than broadcasting for help. There’s still a long road — better indoor positioning, richer facility data, and deeper partnerships with venues — but this project proved the value: accessibility isn’t a “nice to have”; it’s the path to a better game-day for everyone.</p>
+      <p class="mt-3"><a class="btn" href="index.html#/projects">← Back to Projects</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Raihan • <a href="index.html#/">Home</a></div>
+  </footer>
+
+  <script>
+    // Theme toggle (respect site setting)
+    const themeBtn = document.getElementById('themeBtn');
+    const THEME_KEY = 'pref-theme';
+    function apply(theme){ document.documentElement.setAttribute('data-theme', theme); }
+    function loadTheme(){ const t = localStorage.getItem(THEME_KEY) || 'dark'; apply(t); }
+    if(themeBtn){ themeBtn.addEventListener('click', ()=>{ const next = (document.documentElement.getAttribute('data-theme')==='dark')?'light':'dark'; localStorage.setItem(THEME_KEY,next); apply(next); }); }
+    loadTheme();
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
