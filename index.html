@@ -46,7 +46,15 @@
     .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;margin-top:32px;}
     @media (max-width:920px){.hero{grid-template-columns:1fr}}
     .eyebrow{color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-size:12px}
-    h1{font-size:64px;line-height:1.05;margin:10px 0 16px}
+    h1{
+      font-family:'Fraunces',serif;
+      font-weight:700;
+      font-size:72px;
+      line-height:1.05;
+      margin:10px 0 16px;
+      letter-spacing:-0.02em;
+      color:var(--accent);
+    }
     h1 i{font-family:"Fraunces",serif;font-style:italic}
     .lede{color:var(--muted);font-size:18px;line-height:1.7}
   
@@ -155,7 +163,7 @@
     <div class="hero">
       <div>
         <div class="eyebrow">Welcome</div>
-        <h1>Hi <i>there!</i></h1>
+        <h1>Hi <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;">there!</span></h1>
         <p class="lede">I'm <b>Raihan</b>. I design and build practical software — from web backends to data-driven tools. This site shares a few projects and a short story about me. Make yourself at home.</p>
         <div class="mt-4">
           <img src="./assets/images/IMG_8194.jpg" alt="Raihan photo" style="max-width:250px;border-radius:12px;box-shadow:var(--shadow)">
