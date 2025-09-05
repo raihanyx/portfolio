@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>iSaveIt — Project | Raihan</title>
+  <meta name="description" content="iSaveIt — money management app for budgeting and expenses. Story, tech, and design." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0e1116; --elev-1:#121722; --elev-2:#171c28; --text:#e9edf1; --muted:#9fb1c1;
+      --accent:#2dd4bf; --accent-2:#5eead4; --border:rgba(255,255,255,.08);
+      --shadow:0 10px 28px rgba(2,6,23,.35); --radius:16px; --maxw:1100px;
+    }
+    [data-theme="light"]{
+      --bg:#f8fafc; --elev-1:#ffffff; --elev-2:#f1f5f9; --text:#0f172a; --muted:#475569;
+      --accent:#14b8a6; --accent-2:#0ea5a4; --border:rgba(2,6,23,.10); --shadow:0 12px 26px rgba(2,6,23,.06);
+    }
+    html,body{height:100%}
+    body{margin:0;font-family:"Plus Jakarta Sans",ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent-2)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(12,14,18,.6);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border)}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:28px;height:28px;border-radius:999px;background:radial-gradient(closest-side, rgba(45,212,191,.45), rgba(45,212,191,0) 70%), var(--elev-1);display:grid;place-items:center;border:1px solid var(--border);box-shadow:var(--shadow);font-weight:800;color:var(--accent)}
+    .links{display:flex;gap:10px;align-items:center}
+    .links a{padding:8px 12px;border-radius:10px;color:var(--text)}
+    .links a:hover{background:var(--elev-2)}
+    .pill{padding:4px 10px;border:1px solid var(--border);border-radius:999px;background:var(--elev-2);color:var(--muted);font-size:12px}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;background:var(--accent);color:#fff;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+    .btn:hover{background:var(--accent-2)}
+    .hero{padding:56px 0 24px}
+    .title{font-size:44px;margin:8px 0 6px}
+    .subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+    .prose{color:var(--muted);font-size:18px;line-height:1.8}
+    .prose p{margin:0 0 16px}
+    .section{padding:28px 0;border-top:1px solid var(--border)}
+    .meta{display:flex;gap:10px;color:var(--muted);font-size:13px;margin:8px 0}
+    .badge{border:1px solid var(--border);background:var(--elev-2);padding:2px 8px;border-radius:999px;font-size:12px}
+    .artcard{position:relative;background:linear-gradient(120deg,rgba(45,212,191,.10),rgba(59,130,246,.08)),var(--elev-1);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin-top:12px}
+    .artcard .art-body{position:relative;padding:22px 24px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .grid-4 img{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
+    @media (max-width:1000px){.grid-4{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:720px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+    footer{padding:48px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#/" aria-label="Back to home">
+        <div class="logo"><span>R</span></div>
+      </a>
+      <div class="links" role="navigation" aria-label="Primary">
+        <a href="index.html#/">Home</a>
+        <a href="index.html#/projects">Projects</a>
+        <a href="index.html#/about">About</a>
+        <button id="themeBtn" class="pill" title="Toggle theme">Toggle</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="container hero">
+    <div class="artcard">
+      <div class="art-body">
+        <div class="meta"><span>2022</span><span class="badge">Web App</span></div>
+        <h1 class="title">iSaveIt</h1>
+        <p class="subtitle">A money management app to help users organise budgets and track expenses — built to promote financial literacy.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="container section">
+    <div class="prose">
+      <p><strong>What it is.</strong> iSaveIt helps you make sense of your money. Users create budgets, record transactions, and see where cash actually goes — with a simple, forgiving workflow that encourages consistency.</p>
+      <p><strong>What I built.</strong> I developed the backend using <strong>Django (Python)</strong>, implementing core features like budgeting tools, transaction input, and financial tracking. Authentication, models, and a clean API layer keep things maintainable.</p>
+      <p><strong>Design contribution.</strong> I also contributed to the design in <strong>Figma</strong> — shaping the information architecture, screen flows, and UI components so that entering expenses is fast and error-proof.</p>
+    </div>
+  </section>
+
+  <!-- DESIGN GALLERY -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Design snapshots</h3>
+      <p>These are selected screens and components from the Figma work.</p>
+    </div>
+    <div class="grid-4" aria-label="iSaveIt design gallery">
+      <!-- Replace the filenames below with the actual PNGs in ./assets/images/iSaveIt -->
+      <img src="./assets/images/iSaveIt/screen-01.png" alt="iSaveIt design screen 1">
+      <img src="./assets/images/iSaveIt/screen-04.png" alt="iSaveIt design screen 2">
+      <img src="./assets/images/iSaveIt/screen-05.png" alt="iSaveIt design screen 3">
+      <img src="./assets/images/iSaveIt/screen-06.png" alt="iSaveIt design screen 4">
+      <img src="./assets/images/iSaveIt/screen-07.png" alt="iSaveIt design screen 5">
+      <img src="./assets/images/iSaveIt/screen-08.png" alt="iSaveIt design screen 6">
+      <img src="./assets/images/iSaveIt/screen-09.png" alt="iSaveIt design screen 7">
+      <img src="./assets/images/iSaveIt/screen-10.png" alt="iSaveIt design screen 8">
+      <img src="./assets/images/iSaveIt/screen-11.png" alt="iSaveIt design screen 9">
+      <img src="./assets/images/iSaveIt/screen-12.png" alt="iSaveIt design screen 10">
+      <img src="./assets/images/iSaveIt/screen-13.png" alt="iSaveIt design screen 11">
+      <img src="./assets/images/iSaveIt/screen-14.png" alt="iSaveIt design screen 12">
+    </div>
+    <div class="prose" style="margin-top:10px">
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Stack highlights</h3>
+      <ul>
+        <li><strong>Backend:</strong> Django (Python), Django ORM, auth, REST endpoints</li>
+        <li><strong>Data:</strong> PostgreSQL for transactions, budgets, and categories</li>
+        <li><strong>Infra:</strong> GitHub for version control, CI/CD-friendly layout</li>
+      </ul>
+      <p class="mt-3"><a class="btn" href="index.html#/projects">← Back to Projects</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Raihan • <a href="index.html#/">Home</a></div>
+  </footer>
+
+  <script>
+    // Theme toggle (match the main site)
+    const themeBtn = document.getElementById('themeBtn');
+    const THEME_KEY = 'pref-theme';
+    function apply(theme){ document.documentElement.setAttribute('data-theme', theme); }
+    function loadTheme(){ const t = localStorage.getItem(THEME_KEY) || 'dark'; apply(t); }
+    if(themeBtn){ themeBtn.addEventListener('click', ()=>{ const next = (document.documentElement.getAttribute('data-theme')==='dark')?'light':'dark'; localStorage.setItem(THEME_KEY,next); apply(next); }); }
+    loadTheme();
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
