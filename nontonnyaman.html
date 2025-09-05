@@ -44,7 +44,11 @@
     .artcard{position:relative;background:linear-gradient(120deg,rgba(45,212,191,.10),rgba(59,130,246,.08)),var(--elev-1);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin-top:12px}
     .artcard .art-body{position:relative;padding:22px 24px}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .grid-5 img{width:100%;height:auto;object-fit:cover;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
     @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    @media (max-width:1000px){.grid-5{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:720px){.grid-5{grid-template-columns:repeat(2,1fr)}}
 
     footer{padding:48px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
   </style>
@@ -163,6 +167,21 @@
           <li><strong>Risk planning:</strong> identified technical and team risks and tracked mitigations.</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+    <!-- DESIGN GALLERY -->
+  <section class="container section">
+    <div class="prose">
+      <h3>Design snapshots</h3>
+      <p>Here are selected screens from the NontonNyaman app design. (All assets live in <code>./assets/images/nontonnyaman</code>.)</p>
+    </div>
+    <div class="grid-5" aria-label="NontonNyaman design gallery">
+      <img src="./assets/images/nontonnyaman/screen-01.png" alt="NontonNyaman design 1">
+      <img src="./assets/images/nontonnyaman/screen-02.png" alt="NontonNyaman design 2">
+      <img src="./assets/images/nontonnyaman/screen-03.png" alt="NontonNyaman design 3">
+      <img src="./assets/images/nontonnyaman/screen-04.png" alt="NontonNyaman design 4">
+      <img src="./assets/images/nontonnyaman/screen-05.png" alt="NontonNyaman design 5">
     </div>
   </section>
 
