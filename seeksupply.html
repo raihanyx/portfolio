@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SeekSupply — Project | Raihan</title>
+  <meta name="description" content="SeekSupply — a marketplace design connecting SMEs and event organizers with local suppliers. Story, research, and high-fidelity prototype gallery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0e1116; --elev-1:#121722; --elev-2:#171c28; --text:#e9edf1; --muted:#9fb1c1;
+      --accent:#2dd4bf; --accent-2:#5eead4; --border:rgba(255,255,255,.08);
+      --shadow:0 10px 28px rgba(2,6,23,.35); --radius:16px; --maxw:1100px;
+    }
+    [data-theme="light"]{
+      --bg:#f8fafc; --elev-1:#ffffff; --elev-2:#f1f5f9; --text:#0f172a; --muted:#475569;
+      --accent:#14b8a6; --accent-2:#0ea5a4; --border:rgba(2,6,23,.10); --shadow:0 12px 26px rgba(2,6,23,.06);
+    }
+    html,body{height:100%}
+    body{margin:0;font-family:"Plus Jakarta Sans",ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent-2)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(12,14,18,.6);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--border)}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:28px;height:28px;border-radius:999px;background:radial-gradient(closest-side, rgba(45,212,191,.45), rgba(45,212,191,0) 70%), var(--elev-1);display:grid;place-items:center;border:1px solid var(--border);box-shadow:var(--shadow);font-weight:800;color:var(--accent)}
+    .links{display:flex;gap:10px;align-items:center}
+    .links a{padding:8px 12px;border-radius:10px;color:var(--text)}
+    .links a:hover{background:var(--elev-2)}
+    .pill{padding:4px 10px;border:1px solid var(--border);border-radius:999px;background:var(--elev-2);color:var(--muted);font-size:12px}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;background:var(--accent);color:#fff;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+    .btn:hover{background:var(--accent-2)}
+
+    .hero{padding:56px 0 24px}
+    .title{font-size:44px;margin:8px 0 6px}
+    .subtitle{color:var(--muted);font-size:18px;margin:0 0 16px}
+    .prose{color:var(--muted);font-size:18px;line-height:1.8}
+    .prose p{margin:0 0 16px}
+    .section{padding:28px 0;border-top:1px solid var(--border)}
+    .meta{display:flex;gap:10px;color:var(--muted);font-size:13px;margin:8px 0}
+    .badge{border:1px solid var(--border);background:var(--elev-2);padding:2px 8px;border-radius:999px;font-size:12px}
+    .artcard{position:relative;background:linear-gradient(120deg,rgba(45,212,191,.10),rgba(59,130,246,.08)),var(--elev-1);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin-top:12px}
+    .artcard .art-body{position:relative;padding:22px 24px}
+
+    /* 4-wide gallery */
+    .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .grid-4 img{width:100%;height:auto;object-fit:cover;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
+    @media (max-width:1000px){.grid-4{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:720px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+
+    footer{padding:48px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#/" aria-label="Back to home">
+        <div class="logo"><span>R</span></div>
+      </a>
+      <div class="links" role="navigation" aria-label="Primary">
+        <a href="index.html#/">Home</a>
+        <a href="index.html#/projects">Projects</a>
+        <a href="index.html#/about">About</a>
+        <button id="themeBtn" class="pill" title="Toggle theme">Toggle</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="container hero">
+    <div class="artcard">
+      <div class="art-body">
+        <div class="meta"><span>2024</span><span class="badge">Design</span></div>
+        <h1 class="title">SeekSupply</h1>
+        <p class="subtitle">A marketplace that connects small & medium businesses and event organizers with nearby, transparent suppliers — designed end-to-end in Figma.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="container section">
+    <div class="prose">
+      <p><strong>Where it started.</strong> I kept hearing the same story from small venues and event organizers: finding reliable suppliers is slow, opaque, and biased toward big marketplaces. Local suppliers exist, but discovery is hard, and quality isn’t obvious.</p>
+      <p><strong>The leap.</strong> I framed a BHAG for <em>SeekSupply</em>: empower local economies by making supplier discovery fast, transparent, and aligned to each business’s standards. From there I ran a full design process, problem research, HMW prompts, and a Business Model Canvas to anchor value, customers, and channels.</p>
+      <p><strong>Design thinking in action.</strong> I built personas for owners, managers, and suppliers, mapped their journeys, then wrote the user flows: onboarding, sourcing with filters that actually matter (MOQ, lead time, certifications), requesting quotes, and maintaining preferred lists. A storyboard clarified the “day-in-the-life” pain points, and the data model captured relationships between businesses, suppliers, products, and orders.</p>
+      <p><strong>From lo-fi to hi-fi.</strong> I sketched low-fidelity screens to test flow assumptions quickly, then iterated into a high-fidelity prototype, a polished e-commerce experience tuned for SMEs and events: quick supplier search, transparent profiles, comparable quotes, and repeatable re-orders.</p>
+    </div>
+  </section>
+
+  <!-- HI-FI GALLERY (19 images, 4 per row) -->
+  <section class="container section">
+    <div class="prose">
+      <h3>High-fidelity prototype</h3>
+      <p>Selected screens from the final Figma build.</p>
+    </div>
+    <div class="grid-4" aria-label="SeekSupply hi-fi gallery">
+      <img src="./assets/images/seeksupply/screen-01.png" alt="SeekSupply screen 01">
+      <img src="./assets/images/seeksupply/screen-02.png" alt="SeekSupply screen 02">
+      <img src="./assets/images/seeksupply/screen-03.png" alt="SeekSupply screen 03">
+      <img src="./assets/images/seeksupply/screen-04.png" alt="SeekSupply screen 04">
+      <img src="./assets/images/seeksupply/screen-05.png" alt="SeekSupply screen 05">
+      <img src="./assets/images/seeksupply/screen-06.png" alt="SeekSupply screen 06">
+      <img src="./assets/images/seeksupply/screen-07.png" alt="SeekSupply screen 07">
+      <img src="./assets/images/seeksupply/screen-08.png" alt="SeekSupply screen 08">
+      <img src="./assets/images/seeksupply/screen-09.png" alt="SeekSupply screen 09">
+      <img src="./assets/images/seeksupply/screen-10.png" alt="SeekSupply screen 10">
+      <img src="./assets/images/seeksupply/screen-11.png" alt="SeekSupply screen 11">
+      <img src="./assets/images/seeksupply/screen-12.png" alt="SeekSupply screen 12">
+      <img src="./assets/images/seeksupply/screen-13.png" alt="SeekSupply screen 13">
+      <img src="./assets/images/seeksupply/screen-14.png" alt="SeekSupply screen 14">
+      <img src="./assets/images/seeksupply/screen-15.png" alt="SeekSupply screen 15">
+      <img src="./assets/images/seeksupply/screen-16.png" alt="SeekSupply screen 16">
+      <img src="./assets/images/seeksupply/screen-17.png" alt="SeekSupply screen 17">
+      <img src="./assets/images/seeksupply/screen-18.png" alt="SeekSupply screen 18">
+      <img src="./assets/images/seeksupply/screen-19.png" alt="SeekSupply screen 19">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container section">
+    <div class="prose">
+      <p class="mt-3"><a class="btn" href="index.html#/projects">← Back to Projects</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Raihan • <a href="index.html#/">Home</a></div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const THEME_KEY = 'pref-theme';
+    function apply(t){ document.documentElement.setAttribute('data-theme', t); }
+    function load(){ apply(localStorage.getItem(THEME_KEY)||'dark'); }
+    if(themeBtn){ themeBtn.addEventListener('click', ()=>{ const next=(document.documentElement.getAttribute('data-theme')==='dark')?'light':'dark'; localStorage.setItem(THEME_KEY,next); apply(next);});}
+    load();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
