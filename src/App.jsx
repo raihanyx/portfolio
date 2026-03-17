@@ -3,12 +3,12 @@ import { ThemeProvider } from './context/ThemeContext'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
-import Projects from './pages/Projects/Projects'
+import Projects from './pages/projects/Projects'
 import About from './pages/About/About'
-import SeekSupply from './pages/projects/SeekSupply/SeekSupply'
-import NontonNyaman from './pages/projects/NontonNyaman/NontonNyaman'
-import MenuScanOrder from './pages/projects/MenuScanOrder/MenuScanOrder'
-import ISaveIt from './pages/projects/ISaveIt/ISaveIt'
+import SeekSupply from './pages/projects/seeksupply/SeekSupply'
+import NontonNyaman from './pages/projects/nontonnyaman/NontonNyaman'
+import MenuScanOrder from './pages/projects/menuscanorder/MenuScanOrder'
+import ISaveIt from './pages/projects/isaveit/ISaveIt'
 
 export default function App() {
   return (
