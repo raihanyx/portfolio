@@ -1,0 +1,72 @@
+section { padding: 72px 0; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-top: 32px;
+}
+@media (max-width: 920px) {
+  .hero { grid-template-columns: 1fr; }
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.05;
+  margin: 10px 0 16px;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+h1 i { font-family: "Fraunces", serif; font-style: italic; }
+
+.lede { color: var(--muted); font-size: 18px; line-height: 1.7; }
+
+.artcard {
+  position: relative;
+  background: linear-gradient(120deg, rgba(45,212,191,.10), rgba(59,130,246,.08)), var(--elev-1);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-height: 260px;
+  margin-top: 12px;
+}
+.artcard::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10%;
+  background:
+    radial-gradient(500px 200px at 0% 100%, rgba(45,212,191,.25), transparent 60%),
+    radial-gradient(420px 180px at 110% 0%, rgba(59,130,246,.18), transparent 55%);
+  pointer-events: none;
+}
+.artcard .art-body {
+  position: relative;
+  padding: 24px 28px 28px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.artcard .tag {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.artcard .monogram {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.08;
+  letter-spacing: .01em;
+  color: var(--text);
+}
+.artcard p {
+  color: var(--muted);
+  margin-top: 6px;
+  margin-bottom: 0;
+}
