@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './SeekSupply.css'
+import '../../../styles/projects-shared.css'
 
 export default function SeekSupply() {
   return (

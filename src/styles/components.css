@@ -44,3 +44,10 @@
 .links a:hover {
   background: var(--elev-2);
 }
+
+footer {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}

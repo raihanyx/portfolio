@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './ISaveIt.css'
+import '../../../styles/projects-shared.css'
 
 const screens = ['01','04','05','06','07','08','09','10','11','12','13','14']
 

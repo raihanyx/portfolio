@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useTheme } from '../../context/ThemeContext'
-import './Nav.css'
+import '../../styles/components.css'
 
 export default function Nav() {
   const { toggleTheme } = useTheme()

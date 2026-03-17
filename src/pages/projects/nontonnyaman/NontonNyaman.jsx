@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './NontonNyaman.css'
+import '../../../styles/projects-shared.css'
 
 export default function NontonNyaman() {
   return (
