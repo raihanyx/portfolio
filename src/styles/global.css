@@ -27,6 +27,8 @@
 }
 
 html, body { height: 100%; }
+#root { min-height: 100%; display: flex; flex-direction: column; }
+main { flex: 1; }
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;

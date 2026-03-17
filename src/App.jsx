@@ -15,6 +15,7 @@ export default function App() {
     <ThemeProvider>
       <HashRouter>
         <Nav />
+        <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/projects/menuscanorder" element={<MenuScanOrder />} />
           <Route path="/projects/isaveit" element={<ISaveIt />} />
         </Routes>
+        </main>
         <Footer />
       </HashRouter>
     </ThemeProvider>

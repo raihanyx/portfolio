@@ -4,11 +4,11 @@ import '../../styles/projects.css'
 
 export default function Projects() {
   return (
-    <section className="container">
+    <section className="container projects-page">
       <h2 className="title">Projects</h2>
       <p className="subtitle">These are the projects that I have done so far in my career.</p>
 
-      <div className="grid">
+      <div className="projects-grid">
         {projects.map(p => (
           <article className="card" key={p.slug}>
             <div className="thumb" style={p.thumbStyle} />
@@ -19,7 +19,7 @@ export default function Projects() {
               </div>
               <h3 style={{ margin: '0 0 6px' }}>{p.title}</h3>
               <p className="mt-2" style={{ color: 'var(--muted)' }}>{p.description}</p>
-              <p className="mt-3">
+              <p className="read-more">
                 <Link to={`/projects/${p.slug}`}>Read more →</Link>
               </p>
             </div>
