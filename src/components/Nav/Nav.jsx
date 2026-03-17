@@ -3,20 +3,21 @@ import { useTheme } from '../../context/ThemeContext'
 import '../../styles/components.css'
 
 export default function Nav() {
-  const { toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <nav className="nav">
       <div className="container nav-wrap">
-        <Link className="brand" to="/" aria-label="Raihan logo">
-          <div className="logo"><span>R</span></div>
-          <span className="sr-only">Raihan</span>
+        <Link className="brand" to="/" aria-label="Home">
+          Raihan
         </Link>
         <div className="links" role="navigation" aria-label="Primary">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/about">About</NavLink>
-          <button className="pill" onClick={toggleTheme} title="Toggle theme">Toggle</button>
+          <button className="pill theme-toggle" onClick={toggleTheme} title="Toggle theme">
+            {theme === 'dark' ? '☀ Light' : '☾ Dark'}
+          </button>
         </div>
       </div>
     </nav>

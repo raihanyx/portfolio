@@ -2,9 +2,9 @@ section { padding: 72px 0; }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 48px;
+  align-items: start;
   margin-top: 32px;
 }
 @media (max-width: 920px) {
@@ -31,8 +31,12 @@ h1 i { font-family: "Fraunces", serif; font-style: italic; }
   border-radius: 18px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  min-height: 260px;
   margin-top: 12px;
+}
+.card-photo {
+  width: 100%;
+  display: block;
+  border-radius: 14px 14px 0 0;
 }
 .artcard::before {
   content: "";
@@ -45,11 +49,9 @@ h1 i { font-family: "Fraunces", serif; font-style: italic; }
 }
 .artcard .art-body {
   position: relative;
-  padding: 24px 28px 28px;
-  min-height: 260px;
+  padding: 20px 24px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .artcard .tag {
   color: var(--muted);

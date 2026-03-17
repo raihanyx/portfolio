@@ -14,15 +14,12 @@ export default function Home() {
             communication and efficient solutions. This site shares a few of my projects and a short story about me.
             Make yourself at home.
           </p>
-          <div className="mt-4">
-            <img src="/assets/images/IMG_8194.jpg" alt="Raihan photo" style={{ maxWidth: '250px', borderRadius: '12px', boxShadow: 'var(--shadow)' }} />
-          </div>
           <div className="mt-6">
-            <span style={{ marginRight: '12px', color: 'var(--muted)' }}>Check out my projects</span>
             <Link className="btn" to="/projects">See projects</Link>
           </div>
         </div>
         <div className="artcard">
+          <img src="/assets/images/IMG_8194.jpg" className="card-photo" alt="Raihan photo" />
           <div className="art-body">
             <div className="tag">Meet Me</div>
             <div className="monogram">Raihan Sukmana</div>
