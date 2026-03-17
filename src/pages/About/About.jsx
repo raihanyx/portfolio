@@ -11,7 +11,7 @@ export default function About() {
         <p className="mt-4">
           Want to chat? Email <a href="mailto:raihansukmana12@gmail.com">raihansukmana12@gmail.com</a>{' '}
           or ping me on <a href="https://www.linkedin.com/in/raihansukmana/" target="_blank" rel="noreferrer">LinkedIn</a>.{' '}
-          You can also view my <a href="/assets/documents/resume2025.pdf" target="_blank" rel="noreferrer">resume here</a>.
+          You can also view my <a href="/assets/documents/resume17_03_2026.pdf" target="_blank" rel="noreferrer">resume here</a>.
         </p>
       </div>
     </section>

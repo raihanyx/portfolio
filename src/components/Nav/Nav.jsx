@@ -9,7 +9,7 @@ export default function Nav() {
     <nav className="nav">
       <div className="container nav-wrap">
         <Link className="brand" to="/" aria-label="Home">
-          Raihan
+          <img src="/assets/images/Logo.JPG" alt="RS" className="brand-logo" />
         </Link>
         <div className="links" role="navigation" aria-label="Primary">
           <NavLink to="/" end>Home</NavLink>
