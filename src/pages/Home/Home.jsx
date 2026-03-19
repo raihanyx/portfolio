@@ -14,6 +14,23 @@ export default function Home() {
             communication and efficient solutions. This site shares a few of my projects and a short story about me.
             Make yourself at home.
           </p>
+
+          <div className="featured-section">
+            <div className="eyebrow">Featured Project</div>
+            <div className="featured-card">
+              <div className="featured-thumb" />
+              <div className="featured-body">
+                <div className="meta">
+                  <span>2024</span>
+                  <span className="badge">Web App</span>
+                </div>
+                <h3 className="featured-title">NontonNyaman – Accessibility-Focused Navigation App</h3>
+                <p className="featured-desc">A mobile app to improve navigation for users with mobility impairments, built with Django and PostgreSQL.</p>
+                <Link to="/projects/nontonnyaman" className="featured-link">View project →</Link>
+              </div>
+            </div>
+          </div>
+
           <div className="mt-6">
             <Link className="btn" to="/projects">See projects</Link>
           </div>
