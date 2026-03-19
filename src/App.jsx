@@ -10,6 +10,7 @@ import NontonNyaman from './pages/projects/nontonnyaman/NontonNyaman'
 import MenuScanOrder from './pages/projects/menuscanorder/MenuScanOrder'
 import ISaveIt from './pages/projects/isaveit/ISaveIt'
 import NotFound from './pages/NotFound/NotFound'
+import BackToTop from './components/BackToTop/BackToTop'
 
 function AppInner() {
   const location = useLocation()
@@ -31,6 +32,7 @@ function AppInner() {
         </div>
       </main>
       <Footer />
+      <BackToTop />
     </>
   )
 }

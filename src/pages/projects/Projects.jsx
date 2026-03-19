@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import projects from '../../data/projects'
+import Reveal from '../../components/Reveal/Reveal'
 import '../../styles/projects.css'
 
 export default function Projects() {
@@ -9,8 +10,9 @@ export default function Projects() {
       <p className="subtitle">These are the projects that I have done so far in my career.</p>
 
       <div className="projects-grid">
-        {projects.map(p => (
-          <article className="card" key={p.slug}>
+        {projects.map((p, i) => (
+          <Reveal key={p.slug} delay={i * 80}>
+          <article className="card">
             <div className="thumb" style={p.thumbStyle} />
             <div className="body">
               <div className="meta">
@@ -24,6 +26,7 @@ export default function Projects() {
               </p>
             </div>
           </article>
+          </Reveal>
         ))}
       </div>
     </section>

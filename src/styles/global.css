@@ -59,6 +59,16 @@ a:hover { color: var(--accent-2); }
 .mb-2 { margin-bottom: 8px; }
 .mb-6 { margin-bottom: 24px; }
 
+.reveal-wrap {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .4s ease, transform .4s ease;
+}
+.reveal-wrap.visible {
+  opacity: 1;
+  transform: none;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
