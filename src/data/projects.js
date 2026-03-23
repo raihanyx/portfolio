@@ -1,5 +1,19 @@
 const projects = [
   {
+    slug: 'geoquiz',
+    title: 'GeoQuiz — Geography Trivia & Flag Game',
+    year: '2026',
+    badge: 'Game',
+    thumbStyle: {
+      backgroundImage: 'linear-gradient(180deg,rgba(76,141,255,.15),transparent), url(/assets/images/geoquiz/thumb.jpg)',
+      backgroundSize: 'cover, contain',
+      backgroundPosition: 'center, center',
+      backgroundRepeat: 'no-repeat, no-repeat',
+      backgroundColor: '#ffffff',
+    },
+    description: 'Interactive geography trivia — survival mode flag guessing with 3 lives. How many countries can you identify?',
+  },
+  {
     slug: 'seeksupply',
     title: 'SeekSupply — Local Supplier Marketplace for SMEs & Events',
     year: '2024',

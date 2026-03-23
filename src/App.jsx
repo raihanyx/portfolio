@@ -10,6 +10,7 @@ import NontonNyaman from './pages/projects/nontonnyaman/NontonNyaman'
 import MenuScanOrder from './pages/projects/menuscanorder/MenuScanOrder'
 import ISaveIt from './pages/projects/isaveit/ISaveIt'
 import NotFound from './pages/NotFound/NotFound'
+import GeoQuiz from './pages/projects/geoquiz/GeoQuiz'
 import BackToTop from './components/BackToTop/BackToTop'
 
 function AppInner() {
@@ -27,6 +28,7 @@ function AppInner() {
             <Route path="/projects/nontonnyaman" element={<NontonNyaman />} />
             <Route path="/projects/menuscanorder" element={<MenuScanOrder />} />
             <Route path="/projects/isaveit" element={<ISaveIt />} />
+            <Route path="/projects/geoquiz" element={<GeoQuiz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

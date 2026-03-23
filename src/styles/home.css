@@ -95,6 +95,13 @@ h1 i { font-family: "Fraunces", serif; font-style: italic; }
   background-position: top center;
   min-height: 110px;
 }
+.featured-thumb--geoquiz {
+  background-image: url('/assets/images/geoquiz/thumb.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
 .featured-body {
   padding: 14px 16px;
   display: flex;

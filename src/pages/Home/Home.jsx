@@ -16,8 +16,20 @@ export default function Home() {
           </p>
 
           <div className="featured-section">
-            <div className="eyebrow">Featured Project</div>
-            <div className="featured-card">
+            <div className="eyebrow">Featured Projects</div>
+            <div className="featured-card featured-card--geoquiz">
+              <div className="featured-thumb featured-thumb--geoquiz" />
+              <div className="featured-body">
+                <div className="meta">
+                  <span>2026</span>
+                  <span className="badge">Game</span>
+                </div>
+                <h3 className="featured-title">GeoQuiz — Geography Trivia & Flag Game</h3>
+                <p className="featured-desc">Survival mode flag guessing with 3 lives. How many countries can you identify?</p>
+                <Link to="/projects/geoquiz" className="featured-link">Play now →</Link>
+              </div>
+            </div>
+            <div className="featured-card" style={{ marginTop: 10 }}>
               <div className="featured-thumb" />
               <div className="featured-body">
                 <div className="meta">
