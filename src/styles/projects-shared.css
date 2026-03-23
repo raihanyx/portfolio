@@ -1,9 +1,9 @@
 /* Shared styles for all project detail pages */
 
-.hero    { padding: 56px 0 24px; }
+.hero    { padding-top: 56px; padding-bottom: 24px; }
 .title   { font-size: 44px; margin: 8px 0 6px; }
 .subtitle { color: var(--muted); font-size: 18px; margin: 0 0 16px; }
-.section  { padding: 28px 0; border-top: 1px solid var(--border); }
+.section  { padding-top: 28px; padding-bottom: 28px; border-top: 1px solid var(--border); }
 
 .artcard {
   position: relative;

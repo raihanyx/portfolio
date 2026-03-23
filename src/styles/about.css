@@ -1,4 +1,4 @@
-section { padding: 72px 0; }
+section { padding-top: 72px; padding-bottom: 72px; }
 .title { font-size: 42px; margin: 0 0 8px; }
 .title i { font-family: 'Fraunces', serif; font-style: italic; }
 

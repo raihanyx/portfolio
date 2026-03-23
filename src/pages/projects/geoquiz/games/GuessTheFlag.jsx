@@ -137,7 +137,7 @@ export default function GuessTheFlag({ onBack }) {
             <span key={i}>{i < lives ? '❤️' : '🤍'}</span>
           ))}
         </div>
-        <div className="gq-progress">{score} correct · #{questionIndex + 1}</div>
+        <div className="gq-score-badge">{score} <span className="gq-score-badge-label">correct</span></div>
       </div>
 
       <div className="gq-question">
