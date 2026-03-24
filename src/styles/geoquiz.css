@@ -120,6 +120,55 @@
 
 .gq-next-wrap { text-align: center; }
 
+/* Flag display for FlagToCountry question */
+.gq-flag-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.gq-flag-question-img {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  display: block;
+}
+@media (max-width: 480px) {
+  .gq-flag-display { margin-bottom: 16px; }
+}
+
+/* Name choice buttons for FlagToCountry */
+.gq-name-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.gq-name-btn {
+  width: 100%;
+  background: var(--elev-1);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.gq-name-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateX(3px);
+}
+.gq-name-btn:disabled { cursor: default; }
+.gq-name-btn.gq-correct { border-color: #22c55e; box-shadow: 0 0 0 1px #22c55e; }
+.gq-name-btn.gq-wrong   { border-color: #ef4444; box-shadow: 0 0 0 1px #ef4444; }
+
 /* Ghost button */
 .gq-btn-ghost {
   background: none;

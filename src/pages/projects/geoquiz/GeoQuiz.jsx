@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import GuessTheFlag from './games/GuessTheFlag'
+import FlagToCountry from './games/FlagToCountry'
 import '../../../styles/geoquiz.css'
 
 const games = [
@@ -15,7 +16,7 @@ const games = [
     title: 'Flag to Country',
     description: 'See a flag — name the country it belongs to.',
     icon: '🌍',
-    available: false,
+    available: true,
   },
   {
     id: 'country-shape',
@@ -33,6 +34,14 @@ export default function GeoQuiz() {
     return (
       <div className="container gq-wrap">
         <GuessTheFlag onBack={() => setActiveGame(null)} />
+      </div>
+    )
+  }
+
+  if (activeGame === 'flag-to-country') {
+    return (
+      <div className="container gq-wrap">
+        <FlagToCountry onBack={() => setActiveGame(null)} />
       </div>
     )
   }
