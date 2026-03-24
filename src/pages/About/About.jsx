@@ -15,8 +15,8 @@ const experience = [
     location: 'Brisbane, Australia',
     period: 'Mar 2026 – Present',
     points: [
-      'Developed the Exsited Purchase Management App, a full-stack SaaS solution managing the end-to-end supplier purchasing lifecycle using Django and React.',
-      'Engineered a decoupled architecture integrating with the Exsited platform via its SDK, secured with JWT-based authentication.',
+      // 'Developed the Exsited Purchase Management App, a full-stack SaaS solution managing the end-to-end supplier purchasing lifecycle using Django and React.',
+      // 'Engineered a decoupled architecture integrating with the Exsited platform via its SDK, secured with JWT-based authentication.',
     ],
   },
   {
