@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
@@ -42,9 +42,9 @@ function AppInner() {
 export default function App() {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter basename="/portfolio">
         <AppInner />
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }
