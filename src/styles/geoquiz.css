@@ -169,6 +169,22 @@
 .gq-name-btn.gq-correct { border-color: #22c55e; box-shadow: 0 0 0 1px #22c55e; }
 .gq-name-btn.gq-wrong   { border-color: #ef4444; box-shadow: 0 0 0 1px #ef4444; }
 
+/* Shape display for GuessTheShape */
+.gq-shape-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.gq-shape-display svg {
+  max-width: 260px;
+  width: 100%;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.25));
+}
+@media (max-width: 480px) {
+  .gq-shape-display { margin-bottom: 16px; }
+  .gq-shape-display svg { max-width: 200px; }
+}
+
 /* Ghost button */
 .gq-btn-ghost {
   background: none;

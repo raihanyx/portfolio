@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import GuessTheFlag from './games/GuessTheFlag'
 import FlagToCountry from './games/FlagToCountry'
+import GuessTheShape from './games/GuessTheShape'
 import '../../../styles/geoquiz.css'
 
 const games = [
@@ -23,7 +24,7 @@ const games = [
     title: 'Country Shape',
     description: 'See the outline of a country — guess which one it is.',
     icon: '🗺️',
-    available: false,
+    available: true,
   },
 ]
 
@@ -42,6 +43,14 @@ export default function GeoQuiz() {
     return (
       <div className="container gq-wrap">
         <FlagToCountry onBack={() => setActiveGame(null)} />
+      </div>
+    )
+  }
+
+  if (activeGame === 'country-shape') {
+    return (
+      <div className="container gq-wrap">
+        <GuessTheShape onBack={() => setActiveGame(null)} />
       </div>
     )
   }
