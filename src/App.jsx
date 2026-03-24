@@ -40,6 +40,10 @@ function AppInner() {
 }
 
 export default function App() {
+  if (window.location.pathname === '/') {
+    window.location.replace('/portfolio')
+    return null
+  }
   return (
     <ThemeProvider>
       <BrowserRouter basename="/portfolio">
