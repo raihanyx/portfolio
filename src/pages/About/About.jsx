@@ -12,18 +12,19 @@ const experience = [
   {
     role: 'Software Engineer Intern',
     org: 'WebAlive',
-    location: 'Brisbane, Australia',
+    location: 'Melbourne, Australia (Remote)',
     period: 'Mar 2026 – Present',
     points: [
-      // 'Developed the Exsited Purchase Management App, a full-stack SaaS solution managing the end-to-end supplier purchasing lifecycle using Django and React.',
-      // 'Engineered a decoupled architecture integrating with the Exsited platform via its SDK, secured with JWT-based authentication.',
+      'Developed and debugged Operon, a Vue 3 + Vite frontend application featuring Kendo UI components, Pinia state management, and SCSS, contributing to a modular codebase across multiple business domains.',
+      'Developed Cortex AI Playground, a full-stack demo app built with Django 5, Vue 3, and the Exsited Python SDK, featuring an AI-powered chat assistant and a REST API covering accounts, orders, invoices, and payments with JWT authentication.',
+      'Conducted a comprehensive SDK audit and documentation overhaul across multi-language repositories (Python, PHP, .NET) for projects integrating the Exsited platform API, identifying gaps and authoring fixes to API and function-level documentation.',
     ],
   },
   {
     role: 'Data Journalist',
     org: 'Sportradar',
     location: 'Brisbane, Australia',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2026 – Apr 2026',
     points: [
       'Capture and verify real-time sports data for live broadcasts, statistics, and analytics platforms.',
       'Communicate with remote operations teams to resolve discrepancies during live events.',
@@ -94,7 +95,7 @@ export default function About() {
         <p className="mt-4">
           Want to chat? Email <a href="mailto:raihansukmana12@gmail.com">raihansukmana12@gmail.com</a>{' '}
           or ping me on <a href="https://www.linkedin.com/in/raihansukmana/" target="_blank" rel="noreferrer">LinkedIn</a>.{' '}
-          You can also view my <a href="/assets/documents/resume17_03_2026.pdf" target="_blank" rel="noreferrer">resume here</a>.
+          You can also view my <a href="/assets/documents/resume25_04_2026.pdf" target="_blank" rel="noreferrer">resume here</a>.
         </p>
       </div>
 

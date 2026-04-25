@@ -11,6 +11,7 @@ import MenuScanOrder from './pages/projects/menuscanorder/MenuScanOrder'
 import ISaveIt from './pages/projects/isaveit/ISaveIt'
 import NotFound from './pages/NotFound/NotFound'
 import GeoQuiz from './pages/projects/geoquiz/GeoQuiz'
+import Ourverse from './pages/projects/ourverse/Ourverse'
 import BackToTop from './components/BackToTop/BackToTop'
 
 function AppInner() {
@@ -29,6 +30,7 @@ function AppInner() {
             <Route path="/projects/menuscanorder" element={<MenuScanOrder />} />
             <Route path="/projects/isaveit" element={<ISaveIt />} />
             <Route path="/projects/geoquiz" element={<GeoQuiz />} />
+            <Route path="/projects/ourverse" element={<Ourverse />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

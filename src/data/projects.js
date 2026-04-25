@@ -1,5 +1,19 @@
 const projects = [
   {
+    slug: 'ourverse',
+    title: 'Ourverse — Shared Space for Couples',
+    year: '2026',
+    badge: 'Web App',
+    thumbStyle: {
+      backgroundImage: 'url(/assets/images/ourverse/ourverse-logo.png)',
+      backgroundSize: '108%',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundColor: '#2A1C18',
+    },
+    description: 'A couples app for tracking shared expenses, planning dates, building a bucket list, and logging memories — with a two-sided ledger and real-time sync.',
+  },
+  {
     slug: 'geoquiz',
     title: 'GeoQuiz — Geography Trivia & Flag Game',
     year: '2026',
