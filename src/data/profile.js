@@ -9,7 +9,7 @@ export const PROFILE = {
   email: "raihansukmana12@gmail.com",
   linkedin: "https://www.linkedin.com/in/raihansukmana/",
   github: "https://github.com/raihansukmana",
-  resume: "/assets/documents/resume25_04_2026.pdf",
+  resume: "/assets/documents/resume02_06_2026.pdf",
   photo: "/assets/img/raihan.jpg",
   marquee: ["Python","Django","React","PostgreSQL","JavaScript","Spring Boot","AWS","Next.js","Supabase","REST APIs","Figma","CI/CD","Java","Flutter"],
   metrics: [
