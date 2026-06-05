@@ -115,8 +115,8 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid transparent;
 }
 .nav.scrolled {
-  background: color-mix(in srgb, var(--paper) 82%, transparent);
-  backdrop-filter: blur(14px) saturate(1.4);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter: blur(18px) saturate(1.4);
   border-bottom-color: var(--line-2);
 }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; }
