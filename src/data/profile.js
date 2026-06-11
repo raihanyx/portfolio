@@ -9,7 +9,7 @@ export const PROFILE = {
   email: "raihansukmana12@gmail.com",
   linkedin: "https://www.linkedin.com/in/raihansukmana/",
   github: "https://github.com/raihansukmana",
-  resume: "/assets/documents/resume02_06_2026.pdf",
+  resume: "/assets/documents/resume11_06_2026.pdf",
   photo: "/assets/img/raihan.jpg",
   marquee: ["Python","Django","React","PostgreSQL","JavaScript","Spring Boot","AWS","Next.js","Supabase","REST APIs","Figma","CI/CD","Java","Flutter"],
   metrics: [
@@ -35,6 +35,7 @@ export const PROFILE = {
       "Developed and debugged Operon, a Vue 3 + Vite app with Kendo UI, Pinia and SCSS, contributing to a modular codebase across multiple business domains.",
       "Built Cortex AI Playground — a full-stack demo with Django 5, Vue 3 and the Exsited Python SDK, featuring an AI chat assistant and a JWT-secured REST API across accounts, orders, invoices and payments.",
       "Audited and overhauled SDK documentation across Python, PHP and .NET repositories integrating the Exsited platform API, authoring fixes at the API and function level.",
+      "Designed 12 sterilisation request form mockups for Steritech's client portal, digitising their manual PDF-based intake process and providing clients with an intuitive, streamlined submission experience across different product categories.",
     ]},
     { role: "Data Journalist", org: "Sportradar", loc: "Brisbane", period: "Jan 2026 — Apr 2026", points: [
       "Captured and verified real-time sports data for live broadcasts, statistics and analytics platforms.",

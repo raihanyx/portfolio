@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom'
    `.reveal` / `[data-stagger]` elements as they enter the viewport,
    staggers children, and marks the hero in. */
 export function useReveals() {
-  const { pathname } = useLocation()
+  const { pathname, key } = useLocation()
 
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -58,5 +58,5 @@ export function useReveals() {
       window.removeEventListener('resize', check)
       window.removeEventListener('load', check)
     }
-  }, [pathname])
+  }, [pathname, key])
 }
