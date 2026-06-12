@@ -42,7 +42,7 @@ export default function Home() {
               <span className="thin"><Words text="details." /></span>
             </h1>
             <p className="hero-sub reveal">
-              I'm <b>Raihan Sukmana</b> — I design and build practical, reliable software end-to-end.
+              I'm <b>Raihan Sukmana</b>. I design and build practical, reliable software end-to-end.
               Backend APIs, frontends, and the data in between. Currently a SWE intern at WebAlive, based in Brisbane.
             </p>
             <div className="hero-actions reveal">
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="eyebrow">Selected work</div>
             <h2>Things I've built<br />&amp; designed.</h2>
           </div>
-          <p className="lead">A mix of full-stack apps, backend work, and product design. Hover a row for a peek — click through for the full story.</p>
+          <p className="lead">A mix of full-stack apps, backend work, and product design. Hover a row for a peek, then click through for the full story.</p>
         </div>
 
         <div className="work-list" data-preview>

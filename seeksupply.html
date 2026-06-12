@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SeekSupply — Project | Raihan</title>
-  <meta name="description" content="SeekSupply — a marketplace design connecting SMEs and event organizers with local suppliers. Story, research, and high-fidelity prototype gallery." />
+  <title>SeekSupply: Project | Raihan</title>
+  <meta name="description" content="SeekSupply: a marketplace design connecting SMEs and event organizers with local suppliers. Story, research, and high-fidelity prototype gallery." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -44,11 +44,12 @@
     .artcard{position:relative;background:linear-gradient(120deg,rgba(45,212,191,.10),rgba(59,130,246,.08)),var(--elev-1);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin-top:12px}
     .artcard .art-body{position:relative;padding:22px 24px}
 
-    /* 4-wide gallery */
-    .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-    .grid-4 img{width:100%;height:auto;object-fit:cover;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
-    @media (max-width:1000px){.grid-4{grid-template-columns:repeat(3,1fr)}}
-    @media (max-width:720px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+    /* portrait phone gallery */
+    .grid-4{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+    .grid-4 img{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)}
+    @media (max-width:1000px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:720px){.grid-4{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:480px){.grid-4{grid-template-columns:repeat(2,1fr)}}
 
     footer{padding:48px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
   </style>
@@ -75,7 +76,7 @@
       <div class="art-body">
         <div class="meta"><span>2024</span><span class="badge">Design</span></div>
         <h1 class="title">SeekSupply</h1>
-        <p class="subtitle">A marketplace that connects small & medium businesses and event organizers with nearby, transparent suppliers — designed end-to-end in Figma.</p>
+        <p class="subtitle">A marketplace that connects small & medium businesses and event organizers with nearby, transparent suppliers, designed end-to-end in Figma.</p>
       </div>
     </div>
   </header>

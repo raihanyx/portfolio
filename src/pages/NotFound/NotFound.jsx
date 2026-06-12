@@ -8,7 +8,7 @@ export default function NotFound() {
         Lost the<br /><em style={{ color: 'var(--accent)', fontStyle: 'normal' }}>thread.</em>
       </h1>
       <p className="hero-sub" style={{ marginTop: 22 }}>
-        This page doesn't exist — or it moved. Let's get you back on track.
+        This page doesn't exist, or it moved. Let's get you back on track.
       </p>
       <div className="hero-actions" style={{ marginTop: 26 }}>
         <Link className="btn" to="/">Back home <span className="arr">→</span></Link>

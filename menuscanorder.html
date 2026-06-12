@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MenuScanOrder — Project | Raihan</title>
-  <meta name="description" content="MenuScanOrder — QR code ordering and table management SaaS for cafes and restaurants. Story, features, and design." />
+  <title>MenuScanOrder: Project | Raihan</title>
+  <meta name="description" content="MenuScanOrder: QR code ordering and table management SaaS for cafes and restaurants. Story, features, and design." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
       <div class="art-body">
         <div class="meta"><span>2024</span><span class="badge">SaaS</span></div>
         <h1 class="title">MenuScanOrder</h1>
-        <p class="subtitle">QR code ordering & table management for cafes and restaurants — built to make front-of-house smoother for staff and simpler for guests.</p>
+        <p class="subtitle">QR code ordering & table management for cafes and restaurants, built to make front-of-house smoother for staff and simpler for guests.</p>
       </div>
     </div>
   </header>
@@ -82,7 +82,7 @@
   <!-- STORY -->
   <section class="container section">
     <div class="prose">
-      <p><strong>Why this exists.</strong> I’ve watched busy services fall apart over tiny frictions — missing tickets, double-seated tables, a queue at the host stand while staff hunt for menus. <em>MenuScanOrder</em> is the platform I built to remove those frictions: guests scan, order, and pay from the table; staff keep a clean view of orders and seating; owners get a system that actually reflects how a venue runs.</p>
+      <p><strong>Why this exists.</strong> I’ve watched busy services fall apart over tiny frictions: missing tickets, double-seated tables, a queue at the host stand while staff hunt for menus. <em>MenuScanOrder</em> is the platform I built to remove those frictions: guests scan, order, and pay from the table; staff keep a clean view of orders and seating; owners get a system that actually reflects how a venue runs.</p>
 
       <p><strong>Who it serves.</strong> It’s designed for two sides at once: <em>operators</em> who want a calmer, more profitable service, and <em>guests</em> who want convenience without confusion. Managers gain a live map of tables and orders; guests get a digital menu that respects preferences and context.</p>
     </div>
@@ -95,7 +95,7 @@
         <h3>What it does</h3>
         <ul>
           <li><strong>Admin dashboard:</strong> manage businesses, users, and roles with clarity.</li>
-          <li><strong>Digital menus:</strong> categories, items, pricing — easy to create and update.</li>
+          <li><strong>Digital menus:</strong> categories, items, pricing, easy to create and update.</li>
           <li><strong>Table management:</strong> live status of tables to seat guests without guesswork.</li>
           <li><strong>QR codes per table/session:</strong> guests scan to open the right menu instantly.</li>
           <li><strong>Seamless ordering:</strong> guests place orders on their phones; changes are synced in real time.</li>
@@ -120,9 +120,17 @@
       <h3>Data model (short version)</h3>
       <p>Admins manage the platform. Each business owner manages a single restaurant. A restaurant has many menus; each menu has many items (with optional extra categories the owner defines). Each table can have many orders; each order can contain multiple items. Owners and staff update table and order status in real time.</p>
        <figure style="margin:20px 0"></figure>
-        <img src="./assets/images/menuscanorder/IMG_0952.png" alt="MenuScanOrder database design" style="max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)">
+        <img src="./assets/images/menuscanorder/IMG_0952.png" alt="MenuScanOrder database design" style="max-width:700px;width:100%;height:auto;display:block;margin:0 auto;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)">
         <figcaption style="color:var(--muted);font-size:14px;margin-top:6px">Database design for MenuScanOrder</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <!-- SCREENSHOT -->
+  <section class="container section">
+    <div class="prose">
+      <h3>App screenshot</h3>
+      <img src="./assets/images/menuscanorder/IMG_6627.png" alt="MenuScanOrder app screenshot" style="max-width:700px;width:100%;height:auto;display:block;margin:0 auto;border-radius:10px;border:1px solid var(--border);box-shadow:var(--shadow)">
     </div>
   </section>
 
@@ -130,7 +138,7 @@
   <section class="container section">
     <div class="prose">
       <h3>Design document</h3>
-      <p>Want the full picture — rationale, UX, and schema diagrams? Read the design doc below.</p>
+      <p>Want the full picture: rationale, UX, and schema diagrams? Read the design doc below.</p>
       <p>
         <a class="btn" href="./assets/documents/menuscanorder_design_document.pdf" target="_blank" rel="noreferrer">Open PDF</a>
         <span style="margin-left:12px;color:var(--muted)">(opens in a new tab)</span>

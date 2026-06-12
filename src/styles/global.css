@@ -1,12 +1,12 @@
 /* ============================================================
-   RAIHAN SUKMANA — PORTFOLIO
+   RAIHAN SUKMANA PORTFOLIO
    Design system: "Warm Technical"
    Warm monochrome (cream + warm ink) · one clay accent
    Display: Space Grotesk · Labels: Space Mono · Body: Hanken Grotesk
    ============================================================ */
 
 :root {
-  /* — Palette (warm monochrome) — */
+  /* Palette (warm monochrome) */
   --paper:    #F4F0E8;   /* page background, warm cream */
   --paper-2:  #FBF8F2;   /* raised cards */
   --paper-3:  #ECE6DA;   /* sunken / hover wells */
@@ -17,18 +17,18 @@
   --line-2:   rgba(27,23,20,.08);
   --espresso: #1B1612;   /* dark dramatic sections */
 
-  /* — Accent (single, warm clay) — */
+  /* Accent (single, warm clay) */
   --accent:    #DC5B33;
   --accent-2:  #C44A26;   /* pressed */
   --accent-soft: rgba(220,91,51,.12);
   --on-accent: #FBF8F2;
 
-  /* — Type — */
+  /* Type */
   --display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
   --body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 
-  /* — Geometry — */
+  /* Geometry */
   --r-sm: 8px;
   --r-md: 14px;
   --r-lg: 22px;
@@ -41,8 +41,8 @@
   --ease: cubic-bezier(.22,.61,.36,1);
   --ease-out: cubic-bezier(.16,1,.3,1);
 
-  /* — Legacy token aliases (kept so the GeoQuiz game styles map onto
-       the new warm palette without rewriting them) — */
+  /* Legacy token aliases (kept so the GeoQuiz game styles map onto
+       the new warm palette without rewriting them) */
   --bg: var(--paper);
   --elev-1: var(--paper-2);
   --elev-2: var(--paper-3);

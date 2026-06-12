@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { PROJECTS } from '../../data/projects'
 
 function ProjCard({ p }) {
-  const sub = p.full.split('—')[1] ? p.full.split('—')[1].trim() : p.title
+  const sub = p.full.split(':')[1] ? p.full.split(':')[1].trim() : p.title
   return (
     <article className="proj-card reveal" data-tilt>
       <Link to={`/work/${p.slug}`} aria-label={p.title}>
@@ -29,7 +29,7 @@ export default function Work() {
           <div className="eyebrow">Index · {String(PROJECTS.length).padStart(2, '0')} projects</div>
           <h1 style={{ fontSize: 'clamp(40px,8vw,104px)', marginTop: 18, letterSpacing: '-0.035em', lineHeight: 0.95 }}>Work</h1>
           <p className="hero-sub" style={{ marginTop: 22 }}>
-            Full-stack apps, backend services and end-to-end product design — from a couples finance app to a QR ordering platform.
+            Full-stack apps, backend services and end-to-end product design, from a couples finance app to a QR ordering platform.
           </p>
         </div>
       </section>

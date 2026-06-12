@@ -9,21 +9,21 @@ const games = [
   {
     id: 'guess-the-flag',
     title: 'Guess the Flag',
-    description: 'See a country name — pick the right flag. 3 lives. How far can you go?',
+    description: 'See a country name, pick the right flag. 3 lives. How far can you go?',
     icon: '🚩',
     available: true,
   },
   {
     id: 'flag-to-country',
     title: 'Flag to Country',
-    description: 'See a flag — name the country it belongs to.',
+    description: 'See a flag, then name the country it belongs to.',
     icon: '🌍',
     available: true,
   },
   {
     id: 'country-shape',
     title: 'Country Shape',
-    description: 'See the outline of a country — guess which one it is.',
+    description: 'See the outline of a country, then guess which one it is.',
     icon: '🗺️',
     available: true,
   },
@@ -45,7 +45,7 @@ export default function GeoQuiz() {
         <Link className="pd-back" to="/work/geoquiz">← Back to case study</Link>
         <div className="eyebrow" style={{ marginTop: 8 }}>Mini game</div>
         <h2 className="gq-title">GeoQuiz</h2>
-        <p className="gq-tagline">Geography trivia — flags, countries, and more. Pick a game and see how far you get.</p>
+        <p className="gq-tagline">Geography trivia: flags, countries, and more. Pick a game and see how far you get.</p>
 
         <div className="gq-games">
           {games.map((g) => (

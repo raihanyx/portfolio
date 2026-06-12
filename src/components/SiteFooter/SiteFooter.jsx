@@ -1,6 +1,6 @@
 import { PROFILE } from '../../data/profile'
 
-/* Contact section + footer bar — appended to every page (matches the design). */
+/* Contact section + footer bar, appended to every page (matches the design). */
 export default function SiteFooter() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function SiteFooter() {
 
       <footer className="footer-bar">
         <div className="wrap">
-          <span>© {new Date().getFullYear()} Raihan Sukmana — Brisbane, AU</span>
+          <span>© {new Date().getFullYear()} Raihan Sukmana, Brisbane, AU</span>
           <div className="footer-links">
             <a href={PROFILE.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
             <a href={PROFILE.github} target="_blank" rel="noreferrer">GitHub</a>

@@ -26,7 +26,7 @@ export default function Nav() {
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="nav">
       <div className="wrap">
-        <Link className="brand" to="/" aria-label="Home — Raihan Sukmana">
+        <Link className="brand" to="/" aria-label="Home, Raihan Sukmana">
           <span className="mono-dot">{PROFILE.initials}</span>
           <span className="who">{PROFILE.name}<small>Full-stack Engineer</small></span>
         </Link>
