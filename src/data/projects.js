@@ -43,6 +43,8 @@ export const PROJECTS = [
       left: ["<strong>Server components</strong> handle all initial data fetching, no client-side calls on load.", "<strong>Server actions</strong> handle every mutation; form state via React's <code>useActionState</code>.", "<strong>Supabase RLS</strong> enforces data isolation at the database level.", "<strong>Realtime</strong> on the ledger & bucket list uses client channels; the dashboard refreshes on realtime events."],
       right: ["<strong>users</strong>: profile, base currency, couple link", "<strong>couples</strong>: invite code, anniversary date", "<strong>expenses</strong>: amount, currency, category, paid status", "<strong>bucket_items</strong>: shared wishlist with status", "<strong>memories</strong>: completed items with date & note", "<strong>calendar_entries</strong>: planned dates linked to bucket items"],
     },
+    gallery: { type: "phones-full", imgs: ["/assets/images/ourverse/screen-01.png","/assets/images/ourverse/screen-02.png","/assets/images/ourverse/screen-03.png","/assets/images/ourverse/screen-04.png","/assets/images/ourverse/screen-05.png","/assets/images/ourverse/screen-06.png","/assets/images/ourverse/screen-07.png"] },
+    galleryNote: "Home, Ledger, Settled, Bucket list, Calendar, Memories, Profile.",
     stack: [
       ["Framework", "Next.js 16 (App Router)"],
       ["Styling", "Tailwind CSS v4"],
