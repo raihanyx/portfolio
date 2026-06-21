@@ -1,16 +1,12 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-/* Scroll-position reveal engine (IO-free for resilience, matching the
-   design prototype). Re-runs on every route change. Adds `is-in` to
-   `.reveal` / `[data-stagger]` elements as they enter the viewport,
-   staggers children, and marks the hero in. */
 export function useReveals() {
   const { pathname, key } = useLocation()
 
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    let els = [...document.querySelectorAll('.reveal,[data-stagger]')]
+    const els = [...document.querySelectorAll('.reveal,[data-stagger]')]
 
     const revealEl = (el) => {
       if (el.hasAttribute('data-stagger')) {
@@ -21,42 +17,47 @@ export function useReveals() {
       }
     }
 
-    const check = () => {
-      if (!els.length) return
-      const vh = window.innerHeight || document.documentElement.clientHeight
-      const still = []
-      els.forEach((el) => {
-        const r = el.getBoundingClientRect()
-        if (r.top < vh * 0.92 && r.bottom > 0) revealEl(el)
-        else still.push(el)
-      })
-      els = still
-    }
-
     if (reduce) {
       els.forEach(revealEl)
-      els = []
-    } else {
-      check()
+      return
     }
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            revealEl(entry.target)
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { rootMargin: '0px 0px -8% 0px', threshold: 0 }
+    )
+
+    els.forEach((el) => observer.observe(el))
+
     // safety sweeps for late layout shifts (font loading, short pages)
-    const timers = [120, 350, 700, 1200].map((t) => setTimeout(check, t))
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(check)
+    const sweep = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight
+      els.forEach((el) => {
+        if (el.classList.contains('is-in')) return
+        const r = el.getBoundingClientRect()
+        if (r.top < vh * 0.92 && r.bottom > 0) {
+          revealEl(el)
+          observer.unobserve(el)
+        }
+      })
+    }
+    const timers = [120, 350, 700, 1200].map((t) => setTimeout(sweep, t))
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sweep)
 
     const hero = document.querySelector('.hero')
     const heroT = hero ? setTimeout(() => hero.classList.add('is-in'), 80) : null
 
-    window.addEventListener('scroll', check, { passive: true })
-    window.addEventListener('resize', check, { passive: true })
-    window.addEventListener('load', check)
-
     return () => {
+      observer.disconnect()
       timers.forEach(clearTimeout)
       if (heroT) clearTimeout(heroT)
-      window.removeEventListener('scroll', check)
-      window.removeEventListener('resize', check)
-      window.removeEventListener('load', check)
     }
   }, [pathname, key])
 }

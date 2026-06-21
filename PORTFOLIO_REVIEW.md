@@ -35,11 +35,8 @@ Ranked by payoff.
 
 ## Perf / polish (minor)
 
-12. **No `width`/`height` on cover/portrait imgs** → layout shift (CLS). Galleries have `loading="lazy"`; covers/hero photo don't.
-    - Fix: add dims + lazy below the fold.
+12. ~~**No `width`/`height` on cover/portrait imgs**~~ ✅ DONE — Added `aspect-ratio: 3/2` to `.pd-cover` and `aspect-ratio: 3/4` to `.pd-hero-side-cover` in `pages.css`. `.hero-photo` already had `aspect-ratio: 3/3.7`. Browser now reserves space before images load, eliminating CLS.
 
-13. **Reveal engine** (`src/hooks/useReveals.js`) runs `getBoundingClientRect` on all `.reveal` els on every scroll, unthrottled. Fine at this size; `IntersectionObserver` is cleaner + cheaper. (Comment says "IO-free for resilience" — tradeoff no longer needed.)
-    - Fix: optional migrate to IntersectionObserver.
+13. ~~**Reveal engine unthrottled scroll**~~ ✅ DONE — Migrated `src/hooks/useReveals.js` to `IntersectionObserver` (`rootMargin: '0px 0px -8% 0px'`). Safety sweeps retained for font-load edge cases. Removed `scroll`/`resize` event listeners.
 
-14. **Unused heavy assets** in `public/`: `video/exhibition.mp4`, `Image.png`, `Introduction.png`, `Logo.JPG`, `IMG_5523.png`, `IMG_8194.heic/jpg`, raw `ourverse/IMG_08*.PNG`. Not referenced.
-    - Fix: drop to shrink repo + deploy.
+14. ~~**Unused heavy assets**~~ ✅ DONE — Deleted `video/exhibition.mp4`, `Image.png`, `Introduction.png`, `Logo.JPG`, `IMG_5523.png`, `IMG_8194.heic`, `IMG_8194.jpg`, and all 7 `ourverse/IMG_08*.PNG` raw files.
