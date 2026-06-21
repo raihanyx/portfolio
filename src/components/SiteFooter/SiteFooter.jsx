@@ -1,10 +1,14 @@
+import { useLocation } from 'react-router-dom'
 import { PROFILE } from '../../data/profile'
 
 /* Contact section + footer bar, appended to every page (matches the design). */
 export default function SiteFooter() {
+  const { pathname } = useLocation()
+  const hideContact = pathname === '/geoquiz'
+
   return (
     <>
-      <section className="contact" id="contact">
+      {!hideContact && <section className="contact" id="contact">
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">Contact</div></div>
           <h2 className="reveal" style={{ marginTop: 22 }}>
@@ -20,7 +24,7 @@ export default function SiteFooter() {
           </div>
           <div className="wordmark reveal" aria-hidden="true">RAIHAN{' '}SUKMANA</div>
         </div>
-      </section>
+      </section>}
 
       <footer className="footer-bar">
         <div className="wrap">

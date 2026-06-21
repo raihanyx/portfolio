@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useTitle } from '../../hooks/useTitle'
 
 export default function NotFound() {
+  useTitle('404')
   return (
     <section className="hero wrap" style={{ paddingBottom: 'clamp(80px,12vw,160px)' }}>
       <div className="eyebrow">Error · 404</div>

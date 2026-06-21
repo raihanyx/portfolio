@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import GuessTheFlag from './games/GuessTheFlag'
 import FlagToCountry from './games/FlagToCountry'
 import GuessTheShape from './games/GuessTheShape'
+import { useTitle } from '../../../hooks/useTitle'
 import '../../../styles/geoquiz.css'
 
 const games = [
@@ -32,6 +33,7 @@ const games = [
 const wrapStyle = { paddingTop: 'calc(var(--nav-h) + 40px)', paddingBottom: 'clamp(64px,9vw,120px)' }
 
 export default function GeoQuiz() {
+  useTitle('GeoQuiz')
   const [activeGame, setActiveGame] = useState(null)
   const back = () => setActiveGame(null)
 

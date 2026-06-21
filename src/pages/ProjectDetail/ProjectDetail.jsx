@@ -1,11 +1,13 @@
 import { Link, useParams } from 'react-router-dom'
 import { PROJECTS, findProject } from '../../data/projects'
+import { useTitle } from '../../hooks/useTitle'
 
 const html = (s) => ({ dangerouslySetInnerHTML: { __html: s } })
 
 export default function ProjectDetail() {
   const { slug } = useParams()
   const p = findProject(slug)
+  useTitle(p ? p.title : null)
 
   if (!p) {
     return (
@@ -122,11 +124,11 @@ export default function ProjectDetail() {
             <div className="sticky-label"><div className="eyebrow">Architecture</div></div>
             <div>
               <div className="block reveal">
-                <h3>How it's built</h3>
+                <h3>{p.arch.leftTitle}</h3>
                 <ul>{p.arch.left.map((l, i) => <li key={i} {...html(l)} />)}</ul>
               </div>
               <div className="block reveal">
-                <h3>Database: 6 tables, all RLS</h3>
+                <h3>{p.arch.rightTitle}</h3>
                 <ul>{p.arch.right.map((l, i) => <li key={i} {...html(l)} />)}</ul>
               </div>
             </div>

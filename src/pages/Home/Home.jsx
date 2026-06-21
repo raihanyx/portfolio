@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { PROFILE } from '../../data/profile'
 import { PROJECTS } from '../../data/projects'
+import { useTitle } from '../../hooks/useTitle'
 
 /* split a string into per-word spans for the kinetic reveal */
 function Words({ text }) {
@@ -27,6 +28,7 @@ function WorkRow({ p, i }) {
 }
 
 export default function Home() {
+  useTitle(null)
   const featured = PROJECTS.slice(0, 4)
 
   return (

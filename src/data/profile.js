@@ -10,12 +10,12 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/raihansukmana/",
   github: "https://github.com/raihansukmana",
   resume: "/assets/documents/resume11_06_2026.pdf",
-  photo: "/assets/img/raihan.jpg",
+  photo: "/assets/images/raihan.jpg",
   marquee: ["Python","Django","React","PostgreSQL","JavaScript","Spring Boot","AWS","Next.js","Supabase","REST APIs","Figma","CI/CD","Java","Flutter"],
   metrics: [
     ["6", "Shipped projects"],
     ["3", "Years building"],
-    ["2", "CS degrees"],
+    ["2", "Computing degrees"],
     ["∞", "Things to learn", true],
   ],
   bio: [

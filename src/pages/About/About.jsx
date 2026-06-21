@@ -1,4 +1,5 @@
 import { PROFILE } from '../../data/profile'
+import { useTitle } from '../../hooks/useTitle'
 
 function TlItem({ e }) {
   return (
@@ -14,6 +15,7 @@ function TlItem({ e }) {
 }
 
 export default function About() {
+  useTitle('About')
   return (
     <section className="about-hero wrap">
       <div className="reveal"><div className="eyebrow">About</div></div>

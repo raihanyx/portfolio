@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PROJECTS } from '../../data/projects'
+import { useTitle } from '../../hooks/useTitle'
 
 function ProjCard({ p }) {
   const sub = p.full.split(':')[1] ? p.full.split(':')[1].trim() : p.title
@@ -22,6 +23,7 @@ function ProjCard({ p }) {
 }
 
 export default function Work() {
+  useTitle('Work')
   return (
     <>
       <section className="hero wrap" style={{ paddingBottom: 0 }}>
