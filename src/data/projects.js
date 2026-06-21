@@ -77,15 +77,15 @@ export const PROJECTS = [
       ["Modes", "3"],
     ],
     overview: [
-      { h: "The idea", p: "A fast, replayable browser geography game with three distinct modes: pick the right flag for a country, name the country from its flag, or identify a country from its shape alone. Three lives, and a clean score counter — the kind of thing you open for one quick round and lose ten minutes to." },
-      { h: "How it plays", p: "Pick a mode and the game drops you straight in. Each wrong answer costs a life; run out and the round ends. The three modes test different things — recognition, recall, and spatial reasoning — so you can replay them independently and track where your knowledge breaks down." },
+      { h: "The idea", p: "A fast, replayable browser geography game with three distinct modes: pick the right flag for a country, name the country from its flag, or identify a country from its shape alone. Three lives and a clean score counter, the kind of thing you open for one quick round and lose ten minutes to." },
+      { h: "How it plays", p: "Pick a mode and the game drops you straight in. Each wrong answer costs a life; run out and the round ends. The three modes test different things: recognition, recall, and spatial reasoning, so you can replay them independently and track where your knowledge breaks down." },
       { h: "Why I made it", p: "A focused project to sharpen interactive UI work and game-state handling: lives, scoring, round transitions, mode switching, and snappy feedback, while building something genuinely fun to play." },
     ],
     features: [
       ["Guess the Flag", "See a country name, pick the correct flag from four options. Tests pure flag recognition."],
-      ["Flag to Country", "See a flag and name the country it belongs to. Flips the challenge — no multiple choice."],
+      ["Flag to Country", "See a flag and name the country it belongs to. Flips the challenge, no multiple choice."],
       ["Country Shape", "See the outline of a country rendered from real geo data and identify it. Tests spatial geography knowledge."],
-      ["Three lives, survival rules", "One wrong answer costs a life. Lose all three and the round ends — simple, high-stakes, replayable."],
+      ["Three lives, survival rules", "One wrong answer costs a life. Lose all three and the round ends. Simple, high-stakes, replayable."],
     ],
     arch: null,
     stack: [
